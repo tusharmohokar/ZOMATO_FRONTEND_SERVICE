@@ -11,10 +11,10 @@ body {
 
 .register-container {
   background: #fff;
-  padding: 40px 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  width: 350px;
+  padding: 40px 300px 50px 280px;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  width: 250px;
   text-align: center;
 }
 
@@ -53,4 +53,26 @@ body {
 
 .btn-register:hover {
   background: #16a085;
+}
+
+
+.toaster {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4caf50; /* green for success */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-size: 14px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.toaster.show {
+    opacity: 1;
+    transform: translateX(0);
 }
